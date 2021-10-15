@@ -16,7 +16,7 @@ public class ProductResource {
     private ProductService productService;
 
 
-    @GetMapping("/product")
+    @GetMapping(value = "/product")
     public List<Product> getProductList() {
 
         return productService.findAll();
